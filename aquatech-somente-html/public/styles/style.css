@@ -71,6 +71,11 @@ body {
     font-weight: bold;
 }
 
+.social .container {
+    justify-content: center;
+    flex-direction: row;
+}
+
 
 .boxes {
     display: flex;
@@ -103,10 +108,13 @@ body {
 .footer {
     background-color: #32b9cd;
     color: white;
-    padding: 30px;
     text-align: center;
-    margin-top: 10px;
-    height: 63px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    z-index: 999;
 }
 
 
@@ -117,4 +125,81 @@ body {
 
 .footer h4 {
     font-weight: normal;
+}
+
+.login {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.card {
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    color: #e6005a;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo span {
+    color: #e6005a;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.campo input {
+    height: 40px;
+    border: 2px solid #32b9cd;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.botao {
+    background-color: #e6005a;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.card-cadastro .botao {
+    width: 150px;
+    align-self: center;
+}
+
+.card-cadastro .campo {
+    margin-bottom: 10px;
 }
